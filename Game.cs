@@ -115,7 +115,7 @@ namespace HelloWorld
                 }
                 Console.Clear();
 
-                //Player 1 selects ITEM
+                //Player 2 selects ITEM
                 Console.WriteLine("Player 2, select your ITEM.");
                 Console.WriteLine("[1]Sword");
                 Console.WriteLine("[2]Gun");
@@ -168,7 +168,7 @@ namespace HelloWorld
         }
         void BeginMultiplayerBattle()
         {
-            //Loops until the player or the enemy is dead
+            //Fight Time
             while (player1Health > 0 && player2Health > 0)
             {
                 void BlockAttack(ref int player1Health, int attackVal, int player2Defense)
