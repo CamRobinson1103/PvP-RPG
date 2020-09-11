@@ -90,19 +90,19 @@ namespace HelloWorld
                     case '1':
                         {
                             Console.WriteLine("Sword");
-                            player1.damage = 30;
+                         int damage = 30;
                             break;
                         }
                     case '2':
                         {
                             Console.WriteLine("Item = Gun");
-                            player1.damage = 50;
+                            int damage = 50;
                             break;
                         }
                     case '3':
                         {
                             Console.WriteLine("Item = None(Hands");
-                            player1.damage = 10;
+                            int damage = 10;
                             break;
                         }
                     default:
@@ -127,19 +127,19 @@ namespace HelloWorld
                     case '1':
                         {
                             Console.WriteLine("Sword");
-                            player2.damage = 30;
+                            int damage = 30;
                             break;
                         }
                     case '2':
                         {
                             Console.WriteLine("Item = Gun");
-                            player2.damage = 50;
+                            int damage = 50;
                             break;
                         }
                     case '3':
                         {
                             Console.WriteLine("Item = None(Hands");
-                            player2.damage = 10;
+                            int damage = 10;
                             break;
                         }
                     default:
