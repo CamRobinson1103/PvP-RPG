@@ -53,12 +53,13 @@ namespace HelloWorld
         public void Start()
         {
             SelectCharacter();
+            BeginMultiplayerBattle();
 
         }
 
         public void Update()
         {
-            BeginMultiplayerBattle();
+            
 
         }
 
