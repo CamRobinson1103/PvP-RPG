@@ -147,7 +147,7 @@ namespace HelloWorld
                             Console.WriteLine("Aye. Pick an ITEM NOW!!!");
                             Console.Write("> ");
                             Console.ReadKey();
-                            break;
+                            return;
                         }
 
                 }
