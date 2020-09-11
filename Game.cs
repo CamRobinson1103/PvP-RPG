@@ -154,27 +154,9 @@ namespace HelloWorld
 
 
             }
-            void GetInput(out char input, string option1, string option2)
-            {
-                input = ' ';
-                while (input != '1' && input != '2')
-                {
-                    Console.WriteLine("1." + option1);
-                    Console.WriteLine("2." + option2);
-                    Console.Write("> ");
-                    input = Console.ReadKey().KeyChar;
-                }
-            }
+           
 
-            void BlockAttack(ref int player1Health, int attackVal, int player2Defense)
-            {
-                int damage = attackVal - player1Defense;
-                if (damage < 0)
-                {
-                    damage = 0;
-                }
-                player1Health -= damage;
-            }
+            
 
             void PrintStats(Player player1)
             {
@@ -188,6 +170,32 @@ namespace HelloWorld
             //Loops until the player or the enemy is dead
             while (player1Health > 0 && player2Health > 0)
             {
+                void BlockAttack(ref int player1Health, int attackVal, int player2Defense)
+                {
+                    int damage = attackVal - player1Defense;
+                    if (damage < 0)
+                    {
+                        damage = 0;
+                    }
+                    player1Health -= damage;
+                }
+
+                void GetInput(out char input, string option1, string option2, string query)
+                {
+                    Console.WriteLine(query);
+                    //Initialize input
+                    input = ' ';
+                    //Loop until the player enters a valid input
+                    while (input != '1' && input != '2')
+                    {
+                        Console.WriteLine("1." + option1);
+                        Console.WriteLine("2." + option2);
+                        Console.Write("> ");
+                        input = Console.ReadKey().KeyChar;
+                    }
+
+                }
+
                 char input = ' ';
                 GetInput(out input, "Attack", "Defend", "Player one turn");
                 if (input == '1')
