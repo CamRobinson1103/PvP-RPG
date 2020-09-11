@@ -28,14 +28,14 @@ namespace HelloWorld
         Player player1;
         string player1Name = "Player 1";
         int player1Health = 100;
-        int player1Damage = 10;
+        int player1Damage = 20;
         int player1Defense = 5;
         int levelScaleMax = 5;
         //Player 2 Stats
         Player player2;
         string player2Name = "Player 2";
         int player2Health = 100;
-        int player2Damage = 10;
+        int player2Damage = 20;
         int player2Defense = 5;
         int levelScaleMax2 = 5;
 
